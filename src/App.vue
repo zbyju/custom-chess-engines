@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <Navbar />
-    <router-view />
+    <el-container>
+      <el-aside>
+        <Navbar />
+      </el-aside>
+
+      <el-main>
+        <router-view />
+      </el-main>
+    </el-container>
   </div>
 </template>
 
@@ -16,6 +23,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
